@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal|top" android:background="#222222">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView2"
+                   android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                   android:src="@drawable/mark"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:id="@+id/button"
+            android:layout_alignParentRight="true"
+            android:onClick="TestClick"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+            android:layout_height="0dp"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:layout_weight="1"
+        android:layout_gravity="top">
+
+        <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webView"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_background_dark">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept task"
+                android:id="@+id/btnAcceptTask"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:background="@drawable/button_black"
+                android:textColor="@color/main_text_color"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:onClick="onAcceptClick"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best route to task"
+                android:id="@+id/btnRoute"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/button_black"
+                android:state_pressed="true"
+                android:textColor="@color/main_text_color"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:onClick="onRouteClick"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrived to task"
+                android:id="@+id/btnArrived"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/button_black"
+                android:textColor="@color/main_text_color"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:onClick="onArrivedClick"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task status"
+                android:id="@+id/btnTaskStatus"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:background="@drawable/button_black"
+                android:textColor="@color/main_text_color"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:onClick="onTaskStatusClick"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textSize="12dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

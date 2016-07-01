@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@color/main_background">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp"
+                    android:layout_gravity="center_vertical" android:background="#222222">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView4"
+                   android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                   android:src="@drawable/mark"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="Log in"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/main_selection"
+            android:textColor="@color/main_text_color"
+            android:layout_marginTop="40dp"
+            android:onClick="login" />
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="Close"
+            android:id="@+id/btnClose"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/main_selection"
+            android:textColor="@color/main_text_color"
+            android:layout_marginTop="40dp"
+            android:onClick="close" />
+    </LinearLayout>
+
+</LinearLayout>

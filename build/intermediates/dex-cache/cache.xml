@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Nourenc\GUDCMobile\app\lib\httpmime-4.2.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92b7ae91cb55150192341962dd7254ef898768ca">
+        <dex dex="E:\Nourenc\GUDCMobile\app\build\intermediates\pre-dexed\debug\httpmime-4.2.2_f64b5f47d8b78f993bdab720b22351c896d160d5.jar" />
+    </item>
+
+</items>
